@@ -22,7 +22,7 @@ class SongsController < ApplicationController
             counter = 1
             indices = words.each_index.select{|i| !words[i].start_with?("SKIP")}
             i = indices.sample
-            words[i] = "<input type=\"text\" data-correct-answer=\"#{words[i]}\"></input>"
+            words[i] = "<input type=\"text\" data-correct-answer=\"#{words[i]}\"></input><span class=\"answer-correctness\"></span>"
             result = words.join(" ")
           end
         end

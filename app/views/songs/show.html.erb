@@ -1,7 +1,13 @@
-<h2><%= @song.name %></h2>
+<div class="container">
+  <div class="row">
 
-<% @blankified_lyrics.each do |lyric| %>
-  <%= lyric %>
-  <br>
-<% end %>
+    <h2><%= @song.name %></h2>
+
+    <% @blankified_lyrics.each do |lyric| %>
+      <%= lyric %>
+      <br>
+    <% end %>
+
+  </div>
+</div>
 
