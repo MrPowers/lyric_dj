@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+bieber = Artist.first_or_create(first_name: "Justin", last_name: "Bieber")
+song = Song.first_or_create(name: "Sorry", language: "english", youtube_id: "fRh_vgS2dFE", artist_id: bieber.id)
