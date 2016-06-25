@@ -10,7 +10,8 @@ class SongsController < ApplicationController
   private
 
   def processed_lyrics(lyrics)
-    lines_per_blank = 3
+    lines_per_blank = params[:lines_per_blank] || 3
+    lines_per_blank = lines_per_blank.to_i
     counter = 1
     blankified_lyrics = []
     lyrics.each do |lyric|
