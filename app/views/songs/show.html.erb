@@ -1,13 +1,18 @@
 <div class="container">
+
   <div class="row">
+    <audio controls>
+      <source src="<%= @song_path %>" type="audio/mpeg">
+    </audio>
+  </div>
 
+  <div class="row">
     <h2><%= @song.name %></h2>
-
     <% @blankified_lyrics.each do |lyric| %>
       <%= lyric %>
       <br>
     <% end %>
-
   </div>
+
 </div>
 

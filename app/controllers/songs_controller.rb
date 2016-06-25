@@ -4,6 +4,7 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     lyrics_path = File.join(Rails.root, "song_data", @song.name.downcase + ".txt")
     lyrics = File.read(lyrics_path).split("\n")
+    @song_path = File.join("/", "songs", @song.name.downcase + ".mp3")
     @blankified_lyrics = processed_lyrics(lyrics)
   end
 
@@ -12,7 +13,7 @@ class SongsController < ApplicationController
   def processed_lyrics(lyrics)
     lines_per_blank = params[:lines_per_blank] || 3
     lines_per_blank = lines_per_blank.to_i
-    counter = 1
+    counter = (1..lines_per_blank).to_a.sample
     blankified_lyrics = []
     lyrics.each do |lyric|
       # Skip entire lines that begin with "SKIP "
