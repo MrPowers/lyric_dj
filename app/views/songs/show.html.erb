@@ -1,23 +1,36 @@
 <div class="container">
 
   <div class="row">
-    <audio controls>
-      <source src="<%= @song_path %>" type="audio/mpeg">
-    </audio>
-    <select id="select-level">
-      <option value="lines_per_blank=1">Insane</option>
-      <option value="lines_per_blank=2">Hard</option>
-      <option value="lines_per_blank=3">Normal</option>
-      <option value="lines_per_blank=4">Easy</option>
-    </select>
-  </div>
+    <div class="artist-info">
+      <h2><%= @song.name%></h2>
+      <h3><%=@song.artist.first_name + " " + @song.artist.last_name%></h3>
+      <div class="level">
+        <p>Level: </p>
+        <select id="select-level">
+          <option value="lines_per_blank=1">Insane</option>
+          <option value="lines_per_blank=2">Hard</option>
+          <option value="lines_per_blank=3">Normal</option>
+          <option value="lines_per_blank=4">Easy</option>
+        </select>
+      </div>
 
-  <div class="row">
-    <h2><%= @song.name %></h2>
-    <% @blankified_lyrics.each do |lyric| %>
-      <%= lyric %>
+    </div>
+    <div class="lyrics col-md-6">
+      <h5>Fill in the blank words! Press enter to grade the word and tab to skip to the next field.</h5>
       <br>
-    <% end %>
+      <% @blankified_lyrics.each do |lyric| %>
+        <%= lyric %>
+        <br>
+      <% end %>
+    </div>
+    <div class="col-md-6">
+      <audio class="col-md-12" controls>
+        <source src="<%= @song_path %>" type="audio/mpeg">
+      </audio>
+      <div class="col-md-12 score">
+        <h3>Score</h3>
+        <p><span id="num-correct">0</span> / <%=@number_of_blanks%></p>
+      </div>
+    </div>
   </div>
-
 </div>

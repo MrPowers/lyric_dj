@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   function grade() {
     var numCorrect = $("input.correct").length;
-    $('.score').html(numCorrect);
+    $('#num-correct').html(numCorrect);
   }
 
   function updateLevelDropdown() {
