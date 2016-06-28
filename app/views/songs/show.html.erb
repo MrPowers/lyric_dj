@@ -13,7 +13,24 @@
           <option value="lines_per_blank=4">Easy</option>
         </select>
       </div>
-
+      <div class="level">
+        <p>Song Speed: </p>
+        <select id="select-speed">
+          <option value="1.2">120%</option>
+          <option selected="selected" value="1">100%</option>
+          <option value="0.9">90%</option>
+          <option value=".75">75%</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <audio id="audio-player" class="col-md-12" controls>
+        <source src="<%= @song_path %>" type="audio/mpeg">
+      </audio>
+      <div class="col-md-12 score">
+        <h3>Score</h3>
+        <p><span id="num-correct">0</span> / <%=@number_of_blanks%></p>
+      </div>
     </div>
     <div class="lyrics col-md-6">
       <h5>Fill in the blank words! Press enter to grade the word and tab to skip to the next field.</h5>
@@ -22,15 +39,6 @@
         <%= lyric %>
         <br>
       <% end %>
-    </div>
-    <div class="col-md-6">
-      <audio class="col-md-12" controls>
-        <source src="<%= @song_path %>" type="audio/mpeg">
-      </audio>
-      <div class="col-md-12 score">
-        <h3>Score</h3>
-        <p><span id="num-correct">0</span> / <%=@number_of_blanks%></p>
-      </div>
     </div>
   </div>
 </div>
