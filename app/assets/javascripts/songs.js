@@ -19,27 +19,6 @@ $(document).ready(function() {
     $('#num-correct').html(numCorrect);
   }
 
-  function selectLevel() {
-    updateLevelDropdown();
-    $("#select-level").change(function() {
-      if (this.value) {
-        window.location.search = this.value;
-      }
-    });
-  }
-
-  function updateLevelDropdown() {
-  // Need to update the dropdown menu on page load. This is kinda ugly, though. An AJAX request might make this cleaner.
-    var $options = $("#select-level").children();
-    var query = window.location.search;
-    // Select normal level by default (if there's no query).
-    if (!query) {
-      query = "3";
-    }
-    var level = query.slice(query.length-1);
-    $($options[level-1]).attr("selected","selected");
-  }
-
   function selectPlayback() {
     $("#select-speed").change(function() {
       // Couldn't find how to do this in jquery.
@@ -90,7 +69,6 @@ $(document).ready(function() {
     });
   }
 
-  selectLevel();
   selectPlayback();
   evaluateLyrics();
 });

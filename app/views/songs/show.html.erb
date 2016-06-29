@@ -1,17 +1,23 @@
 <div class="container">
 
+  <%= link_to "Insane", "/songs/#{@song.id}?lines_per_blank=1" %>
+
   <div class="row">
     <div class="artist-info">
       <h2><%= @song.name%></h2>
       <h3><%=@song.artist.first_name + " " + @song.artist.last_name%></h3>
       <div class="level">
         <p>Level: </p>
-        <select id="select-level">
-          <option value="lines_per_blank=1">Insane</option>
-          <option value="lines_per_blank=2">Hard</option>
-          <option value="lines_per_blank=3">Normal</option>
-          <option value="lines_per_blank=4">Easy</option>
-        </select>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><%= to_difficulty(params[:lines_per_blank]) %>
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Insane", "/songs/#{@song.id}?lines_per_blank=1" %></li>
+            <li><%= link_to "Hard", "/songs/#{@song.id}?lines_per_blank=2" %></li>
+            <li><%= link_to "Normal", "/songs/#{@song.id}?lines_per_blank=3" %></li>
+            <li><%= link_to "Easy", "/songs/#{@song.id}?lines_per_blank=4" %></li>
+          </ul>
+        </div>
       </div>
       <div class="level">
         <p>Song Speed: </p>
