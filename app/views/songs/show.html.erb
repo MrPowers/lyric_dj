@@ -7,7 +7,7 @@
       <h2><%= @song.name%></h2>
       <h3><%=@song.artist.first_name + " " + @song.artist.last_name%></h3>
       <div class="level">
-        <p>Level: </p>
+        <p>Difficulty: </p>
         <div class="dropdown">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><%= to_difficulty(params[:lines_per_blank]) %>
           <span class="caret"></span></button>

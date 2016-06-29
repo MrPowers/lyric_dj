@@ -21,8 +21,8 @@ $(document).ready(function() {
 
   function selectPlayback() {
     $("#select-speed").change(function() {
-      // Couldn't find how to do this in jquery.
-      document.getElementById("audio-player").playbackRate = this.value;
+      var vid = document.getElementById("audio-player");
+      vid.playbackRate = this.value;
     });
   }
 
