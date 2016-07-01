@@ -6,6 +6,6 @@ module SongsHelper
       3 => "Normal",
       4 => "Easy"
     }
-    mapping[lines_per_blank.to_i]
+    mapping.fetch(lines_per_blank.to_i, "Normal")
   end
 end
