@@ -1,5 +1,25 @@
 .nav li {
   position: relative;
   display: block;
-  margin-top: 10px !important;
+}
+
+#audio-player {
+  padding-top: 10px;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.control-dropdown {
+  margin-top: -5px;
+}
+
+.control-header {
+  color: darkgray;
+}
+
+.dropdown:hover .control-header {
+  border-bottom: 1px solid white;
+  color: white;
 }
