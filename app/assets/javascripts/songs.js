@@ -20,9 +20,13 @@ $(document).ready(function() {
   }
 
   function selectPlayback() {
-    $("#select-speed").change(function() {
+    $(".speed").click(function() {
       var vid = document.getElementById("audio-player");
-      vid.playbackRate = this.value;
+      var selectedValue = $(this).data("value");
+      vid.playbackRate = selectedValue;
+      $("#current-speed").text(String(selectedValue * 100) + "%");
+      // var vid = document.getElementById("audio-player");
+      // vid.playbackRate = this.value;
     });
   }
 
