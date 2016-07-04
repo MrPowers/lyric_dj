@@ -20,7 +20,7 @@
   <nav class="navbar navbar-inverse">
     <div class="container">
       <ul class="nav navbar-nav navbar-left">
-        <a id="brand" class="navbar-brand" href="/">LyricDJ2</a>
+        <li><a id="brand" class="navbar-brand" href="/">LyricDJ2</a></li>
       </ul>
       <ul id="nav-song-player" class="nav navbar-nav">
         <!--Not pulling the <ul> tag into the partial because there might be more stuff we wanna align left.-->
@@ -28,13 +28,13 @@
           <%= render "partials/songplayer" %>
         <% end %>
       </ul>
-      <div class="navbar-header">
+      <!-- <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <i class="fa fa-user" style="color:white" aria-hidden="true"></i>
         </button>
-      </div>
+      </div> -->
 
-      <div id="navbar" class="collapse navbar-collapse">
+      <div id="navbar">
         <ul id="navbar-user-menu" class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
             <li class="dropdown">
