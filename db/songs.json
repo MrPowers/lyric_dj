@@ -1,0 +1,782 @@
+[{
+     "youtube_id": "0GvLP2C2w9U",
+     "language": "spanish",
+     "artist": "j-balvin",
+     "name": "bobo",
+     "image": "j-balvin-bobo.jpg",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "kkx-7fsiWgg",
+     "language": "spanish",
+     "artist": "nicky-jam",
+     "name": "hasta-el-amanecer",
+     "image": "nicky-jam-hasta-el-amanecer.jpg",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "zZjSX01P5dE",
+     "language": "spanish",
+     "artist": "j-balvin",
+     "name": "ginza",
+     "image": "j-balvin-ginza.jpg",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "uU_FFtbCcLc",
+     "language": "spanish",
+     "artist": "nicky-jam",
+     "name": "el-perdon",
+     "image": "nicky-jam-el-perdon.png",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "Xk0wdDTTPA0",
+     "language": "spanish",
+     "artist": "maluma",
+     "name": "borro-cassette",
+     "image": "maluma-borro-cassette.jpeg",
+     "css": "orange",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "ZBMsSPR9QMg",
+     "language": "spanish",
+     "artist": "farruko",
+     "name": "sunset",
+     "image": "farruko-sunset.jpeg",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "WXXgnS26d60",
+     "language": "spanish",
+     "artist": "leslie-grace",
+     "name": "aire",
+     "image": "leslie-grace-aire.jpg",
+     "css": "light-blue",
+     "hot": true,
+     "genre": "pop"
+   },
+
+
+   {
+     "youtube_id": "YQHsXMglC9A",
+     "language": "english",
+     "artist": "adele",
+     "name": "hello",
+     "image": "adele-hello.jpg",
+     "css": "pink",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "fRh_vgS2dFE",
+     "language": "english",
+     "artist": "justin-bieber",
+     "name": "sorry",
+     "image": "justin-bieber-sorry.jpg",
+     "css": "checkers",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "uxpDa-c-4Mc",
+     "language": "english",
+     "artist": "drake",
+     "name": "hotline-bling",
+     "image": "drake-hotline-bling.jpeg",
+     "css": "checkers",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "DK_0jXPuIr0",
+     "language": "english",
+     "artist": "justin-bieber",
+     "name": "what-do-you-mean",
+     "image": "justin-bieber-what-do-you-mean.jpeg",
+     "css": "checkers",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "VbfpW0pbvaU",
+     "language": "english",
+     "artist": "shawn-mendes",
+     "name": "stitches",
+     "image": "shawn-mendes-stitches.jpeg",
+     "css": "checkers",
+     "hot": true,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "LHCob76kigA",
+     "language": "english",
+     "artist": "lukas-graham",
+     "name": "7-years",
+     "image": "lukas-graham-7-years.png",
+     "css": "checkers",
+     "hot": true,
+     "genre": "pop"
+   },
+
+
+
+
+   {
+     "youtube_id": "alqqFtduaFA",
+     "language": "spanish",
+     "artist": "xantos",
+     "name": "bailame-despacio",
+     "image": "xantos-bailame-despacio.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "3rgwIp6D3ow",
+     "language": "spanish",
+     "artist": "wisin-yandel",
+     "name": "algo-me-gusta-de-ti",
+     "image": "wistin-yandel-algo-me-gusta-de-ti.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "6BTjG-dhf5s",
+     "language": "spanish",
+     "artist": "daddy-yankee",
+     "name": "limbo",
+     "image": "daddy-yankee-limbo.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "OxxggwHFj7M",
+     "language": "spanish",
+     "artist": "nicky-jam",
+     "name": "travesuras",
+     "image": "nicky-jam-travesuras.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "7T_09ueky2o",
+     "language": "spanish",
+     "artist": "nicky-jam",
+     "name": "voy-a-beber",
+     "image": "nicky-jam-voy-a-beber.jpeg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "7zp1TbLFPp8",
+     "language": "spanish",
+     "artist": "don-omar",
+     "name": "danza-kuduro",
+     "image": "don-omar-danza-kuduro.JPG",
+     "css": "night",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "QvypZSdjO8M",
+     "language": "spanish",
+     "artist": "plan-b",
+     "name": "fanatica-sensual",
+     "image": "plan-b-fanatica-sensual.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "SB8-YY2DyHI",
+     "language": "spanish",
+     "artist": "plan-b",
+     "name": "mi-vecinita",
+     "image": "plan-b-mi-vecinita.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "qRp3-D3SMwI",
+     "language": "spanish",
+     "artist": "osmani-garcia",
+     "name": "el-taxi",
+     "image": "osmani-garcia-el-taxi.jpeg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "TapXs54Ah3E",
+     "language": "spanish",
+     "artist": "j-balvin",
+     "name": "ay-vamos",
+     "image": "j-balvin-ay-vamos.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "yUV9JwiQLog",
+     "language": "spanish",
+     "artist": "j-balvin",
+     "name": "6am",
+     "image": "j-balvin-6am.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "zCB8Z_fO2Yo",
+     "language": "spanish",
+     "artist": "pitbull",
+     "name": "como-yo-le-doy",
+     "image": "pitbull-como-yo-le-doy.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "Z-3su2ov8Vg",
+     "language": "spanish",
+     "artist": "don-omar",
+     "name": "salio-el-sol",
+     "image": "don-omar-salio-el-sol.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+   {
+     "youtube_id": "EfF9EE6ZR5E",
+     "language": "spanish",
+     "artist": "daddy-yankee",
+     "name": "sigueme-y-te-sigo",
+     "image": "daddy-yankee-sigueme-y-te-sigo.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggaeton"
+   },
+
+
+
+
+   {
+     "youtube_id": "Fp19ZHj_seU",
+     "language": "spanish",
+     "artist": "lil-silvo",
+     "name": "te-encontre",
+     "image": "lil-silvo-te-encontre.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "romantic-reggaeton"
+   },
+   {
+     "youtube_id": "wZRWpr1G1Qw",
+     "language": "spanish",
+     "artist": "wisin",
+     "name": "nota-de-amor",
+     "image": "wisin-nota-de-amor.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "romantic-reggaeton"
+   },
+   {
+     "youtube_id": "0yr75-gxVtM",
+     "language": "spanish",
+     "artist": "chino-nacho",
+     "name": "me-voy-enamorando",
+     "image": "chino-nacho-me-voy-enamorando.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "romantic-reggaeton"
+   },
+   {
+     "youtube_id": "cz3KDu_Vgb8",
+     "language": "spanish",
+     "artist": "bigal",
+     "name": "mi-declaracion",
+     "image": "bigal-mi-declaracion.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "romantic-reggaeton"
+   },
+
+
+
+
+
+   {
+     "youtube_id": "QFs3PIZb3js",
+     "language": "spanish",
+     "artist": "romeo-santos",
+     "name": "propuesta-indecente",
+     "image": "romeo-santos-propuesta-indecente.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "bachata"
+   },
+   {
+     "youtube_id": "bdOXnTbyk0g",
+     "language": "spanish",
+     "artist": "prince-royce",
+     "name": "darte-un-beso",
+     "image": "prince-royce-darte-un-beso.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "bachata"
+   },
+   {
+     "youtube_id": "jk4HYngf65w",
+     "language": "spanish",
+     "artist": "romeo-santos",
+     "name": "cancioncitas-de-amor",
+     "image": "romeo-santos-cancioncitas-de-amor.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "bachata"
+   },
+   {
+     "youtube_id": "RSyUWjftHrs",
+     "language": "spanish",
+     "artist": "enrique-iglesias",
+     "name": "loco",
+     "image": "enrique-iglesias-loco.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "bachata"
+   },
+   {
+     "youtube_id": "8iPcqtHoR3U",
+     "language": "spanish",
+     "artist": "romeo-santos",
+     "name": "eres-mia",
+     "image": "romeo-santos-eres-mia.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "bachata"
+   },
+   {
+     "youtube_id": "Y3XyWhrZnqE",
+     "language": "spanish",
+     "artist": "romeo-santos",
+     "name": "promise",
+     "image": "romeo-santos-promise.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "bachata"
+   },
+
+
+
+
+
+   {
+     "youtube_id": "av3wkasS-WQ",
+     "language": "spanish",
+     "artist": "mana",
+     "name": "mariposa-traicionera",
+     "image": "mana-mariposa-traicionera.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "NUsoVlDFqZg",
+     "language": "spanish",
+     "artist": "enrique-iglesias",
+     "name": "bailando",
+     "image": "enrique-iglesias-bailando.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "Geqmpq0tjNU",
+     "language": "spanish",
+     "artist": "marc-anthony",
+     "name": "cuando-nos-volvemos-a-encontrar",
+     "image": "marc-anthony-cuando-nos-volvemos-a-encontrar.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "y8rBC6GCUjg",
+     "language": "spanish",
+     "artist": "julieta-venegas",
+     "name": "me-voy",
+     "image": "julieta-venegas-me-voy.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "a8Rwz6zBJSE",
+     "language": "spanish",
+     "artist": "shakira",
+     "name": "suerte",
+     "image": "shakira-suerte.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "pRpeEdMmmQ0",
+     "language": "english",
+     "artist": "shakira",
+     "name": "waka-waka",
+     "image": "shakira-waka-waka.jpeg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "ZuupMrAhGXw",
+     "language": "spanish",
+     "artist": "mana",
+     "name": "mi-verdad",
+     "image": "mana-mi-verdad.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "wTZ7A-h8yTs",
+     "language": "spanish",
+     "artist": "shakira",
+     "name": "tu",
+     "image": "shakira-tu.jpg",
+     "css": "night",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "VMp55KH_3wo",
+     "language": "spanish",
+     "artist": "marc-anthony",
+     "name": "la-gozadera",
+     "image": "marc-anthony-la-gozadera.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "2GhF2mPKnDg",
+     "language": "spanish",
+     "artist": "jarabe-de-palo",
+     "name": "agua",
+     "image": "jarabe-de-palo-agua.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+
+
+
+
+   {
+     "youtube_id": "kffacxfA7G4",
+     "language": "english",
+     "artist": "justin-bieber",
+     "name": "baby",
+     "image": "justin-bieber-baby.jpg",
+     "css": "checkers",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "fWNaR-rxAic",
+     "language": "english",
+     "artist": "carly-rae-jepsen",
+     "name": "call-me-maybe",
+     "image": "carly-rae-jepsen-call-me-maybe.png",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "hLQl3WQQoQ0",
+     "language": "english",
+     "artist": "adele",
+     "name": "someone-like-you",
+     "image": "adele-someone-like-you.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "8UVNT4wvIGY",
+     "language": "english",
+     "artist": "gotye",
+     "name": "somebody-that-i-used-to-know",
+     "image": "gotye-somebody-that-i-used-to-know.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "yyDUC1LUXSU",
+     "language": "english",
+     "artist": "robin-thicke",
+     "name": "blurred-lines",
+     "image": "robin-thicke-blurred-lines.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "psuRGfAaju4",
+     "language": "english",
+     "artist": "owl-city",
+     "name": "fireflies",
+     "image": "owl-city-fireflies.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "kMAzstG5O7E",
+     "language": "english",
+     "artist": "echosmith",
+     "name": "bright",
+     "image": "echosmith-bright.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+
+
+
+
+
+
+
+   {
+     "youtube_id": "lWA2pjMjpBs",
+     "language": "english",
+     "artist": "rihanna",
+     "name": "diamonds",
+     "image": "rihanna-diamonds.jpeg",
+     "css": "checkers",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "OPf0YbXqDm0",
+     "language": "english",
+     "artist": "bruno-mars",
+     "name": "uptown-funk",
+     "image": "bruno-mars-uptown-funk.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "PIh2xe4jnpk",
+     "language": "english",
+     "artist": "magic",
+     "name": "rude",
+     "image": "magic-rude.png",
+     "css": "orange",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "CevxZvSJLk8",
+     "language": "english",
+     "artist": "katy-perry",
+     "name": "roar",
+     "image": "katy-perry-roar.jpg",
+     "css": "light-blue",
+     "hot": false,
+     "genre": "pop"
+   },
+   {
+     "youtube_id": "nfWlot6h_JM",
+     "language": "english",
+     "artist": "taylor-swift",
+     "name": "shake-it-off",
+     "image": "taylor-swift-shake-it-off.jpg",
+     "css": "pink",
+     "hot": false,
+     "genre": "pop"
+   },
+
+
+
+
+   {
+     "youtube_id": "_JZom_gVfuw",
+     "language": "english",
+     "artist": "notorious-big",
+     "name": "juicy",
+     "image": "notorious-big-juicy.jpg",
+     "css": "night",
+     "hot": false,
+     "genre": "rap"
+   },
+   {
+     "youtube_id": "A_J7kEhY9sM",
+     "language": "english",
+     "artist": "machine-gun-kelly",
+     "name": "wild-boy",
+     "image": "wild-boy.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "rap"
+   },
+   {
+     "youtube_id": "UX6K7waag5Q",
+     "language": "english",
+     "artist": "wiz-khalifa",
+     "name": "we-dem-boyz",
+     "image": "we-dem-boyz.jpeg",
+     "css": "orange",
+     "hot": false,
+     "genre": "rap"
+   },
+   {
+     "youtube_id": "hRK7PVJFbS8",
+     "language": "english",
+     "artist": "kendrick-lamar",
+     "name": "king-kunta",
+     "image": "king-kunta.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "rap"
+   },
+   {
+     "youtube_id": "i_kF4zLNKio",
+     "language": "english",
+     "artist": "fetty-wap",
+     "name": "trap-queen",
+     "image": "fetty-wap-trap-queen.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "rap"
+   },
+
+
+
+
+
+   {
+     "youtube_id": "Fjg3n5nt550",
+     "language": "spanish",
+     "artist": "cultura-profetica",
+     "name": "la-complicidad",
+     "image": "cultura-profetica-la-complicidad.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggae"
+   },
+   {
+     "youtube_id": "dTb9Nd7UKvQ",
+     "language": "spanish",
+     "artist": "cultura-profetica",
+     "name": "baja-la-tension",
+     "image": "cultura-profetica-baja-la-tension.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggae"
+   },
+   {
+     "youtube_id": "Rj_-uT7M5uo",
+     "language": "spanish",
+     "artist": "cultura-profetica",
+     "name": "rimas-para-seducir",
+     "image": "cultura-profetica-rimas-para-seducir.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggae"
+   },
+   {
+     "youtube_id": "cUCls4kHAng",
+     "language": "spanish",
+     "artist": "los-pericos",
+     "name": "runaway",
+     "image": "los-pericos-runaway.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggae"
+   },
+
+
+
+   {
+     "youtube_id": "iJiyYdHTJE0",
+     "language": "english",
+     "artist": "shaggy",
+     "name": "repent",
+     "image": "shaggy-repent.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "reggae"
+   },
+
+
+   {
+     "youtube_id": "DtEXcC5Z9wE",
+     "language": "spanish",
+     "artist": "twister-el-rey",
+     "name": "la-espeluca",
+     "image": "twister-el-rey-la-espeluca.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "champeta"
+   },
+   {
+     "youtube_id": "xZF8PSFUZ8g",
+     "language": "spanish",
+     "artist": "kevin-florez",
+     "name": "la-invite-a-bailar",
+     "image": "kevin-florez-la-invite-a-bailar.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "champeta"
+   },
+
+
+
+   {
+     "youtube_id": "M5wr0Yvs9cg",
+     "language": "spanish",
+     "artist": "cartel-de-santa",
+     "name": "el-raton-y-el-queso",
+     "image": "cartel-de-santa-el-raton-y-el-queso.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "rap"
+   },
+
+
+
+   {
+     "youtube_id": "QJO3ROT-A4E",
+     "language": "english",
+     "artist": "one-direction",
+     "name": "what-makes-you-beautiful",
+     "image": "what-makes-you-beautiful.jpg",
+     "css": "orange",
+     "hot": false,
+     "genre": "boy-band"
+   }
+]
