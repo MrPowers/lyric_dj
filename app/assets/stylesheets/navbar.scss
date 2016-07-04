@@ -24,6 +24,12 @@
   color: white;
 }
 
-#user-icon {
+#user-icon, #brand {
     line-height: 35px;
+}
+
+#nav-song-player {
+  display: flex;
+  justify-content: center;
+  width: 75%;
 }
