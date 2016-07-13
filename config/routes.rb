@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   resources :songs, only: [:show]
 
-  get 'como-aprender-ingles', to: 'blogs#about'
+  get 'aprender-ingles-con-canciones', to: 'blogs#about'
 
 end
