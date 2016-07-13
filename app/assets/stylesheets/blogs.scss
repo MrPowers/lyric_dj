@@ -2,14 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.about h1 {
+.above-fold {
+  background-size: cover;
+  margin-top: -20px;
+  height: 400px;
+  color: white;
+}
+
+#aprender-ingles-con-canciones {
+  background-image: asset_url('language-1.jpg');
+}
+
+
+.above-fold h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.above-fold .sub-header {
+  font-size: 30px;
   text-align: center;
 }
 
-.about .sub-header {
-  font-size: 30px;
+.sub-page {
+  padding-top: 3em;
 }
 
-.about h2 {
-  padding-top: 1.5em;
+.sub-page .intro-sentence {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.sub-page h2 {
+  padding-top: 20px;
+}
+
+.sub-page p {
+  font-size: 14px;
+}
+
+.sub-page .image-right {
+  float: right;
+  margin: 15px;
+}
+
+.sub-page .image-left {
+  float: left;
+  margin: 15px;
 }
