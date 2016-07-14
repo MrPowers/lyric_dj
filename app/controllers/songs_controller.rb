@@ -1,7 +1,8 @@
 class SongsController < ApplicationController
 
   def show
-    @song = Song.includes(:artist).find(params[:id])
+    @artist = Artist.where(slug: params[:artist_slug]).first
+    @song = Song.where(slug: params[:song_slug], artist_id: @artist.id).first
     lyrics_path = File.join(Rails.root, "song_data", @song.name.downcase + ".txt")
     lyrics = File.read(lyrics_path).split("\n")
     @song_path = File.join("/", "songs", @song.name.downcase + ".mp3")

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :songs, only: [:show]
+  get '/:artist_slug/:song_slug', to: 'songs#show', as: 'artist_song'
 
   get 'aprender-ingles-con-canciones', to: 'blogs#about'
 
