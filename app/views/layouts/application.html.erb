@@ -27,12 +27,6 @@
       <ul class="nav navbar-nav navbar-left">
         <li><a id="brand" class="navbar-brand" href="/">LyricDJ2</a></li>
       </ul>
-      <ul id="nav-song-player" class="nav navbar-nav">
-        <!--Not pulling the <ul> tag into the partial because there might be more stuff we wanna align left.-->
-        <% if request.env['PATH_INFO'].include?("/songs/") && user_signed_in?%>
-          <%= render "partials/songplayer" %>
-        <% end %>
-      </ul>
       <!-- <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <i class="fa fa-user" style="color:white" aria-hidden="true"></i>
