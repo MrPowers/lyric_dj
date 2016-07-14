@@ -6,16 +6,16 @@ class SongsController < ApplicationController
     lyrics_path = File.join(Rails.root, "song_data", @song.name.downcase + ".txt")
     lyrics = File.read(lyrics_path).split("\n")
     @song_path = File.join("/", "songs", @song.name.downcase + ".mp3")
-    lyrics = processed_lyrics(lyrics)
+    @difficulty = params[:difficulty] || "normal"
+    lyrics = processed_lyrics(lyrics, @difficulty)
     @blankified_lyrics = lyrics[:blankified_lyrics]
     @number_of_blanks = lyrics[:number_of_blanks]
   end
 
   private
 
-  def processed_lyrics(lyrics)
-    lines_per_blank = params[:lines_per_blank] || 3
-    lines_per_blank = lines_per_blank.to_i
+  def processed_lyrics(lyrics, difficulty)
+    lines_per_blank = lines_per_blank(difficulty)
     counter = (1..lines_per_blank).to_a.sample
     number_of_blanks = 0
     blankified_lyrics = []
@@ -48,6 +48,16 @@ class SongsController < ApplicationController
     end
     { blankified_lyrics: blankified_lyrics,
       number_of_blanks: number_of_blanks }
+  end
+
+  def lines_per_blank(difficulty)
+    mapping = {
+      "easy" => 4,
+      "normal" => 3,
+      "hard" => 2,
+      "insane" => 1
+    }
+    mapping.fetch(difficulty, 3)
   end
 
 end

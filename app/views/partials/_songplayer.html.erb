@@ -17,14 +17,14 @@
 
 <span class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Difficulty: <%= to_difficulty(params[:lines_per_blank]) %>
+    Difficulty: <%= @difficulty %>
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><%= link_to "Insane", "/#{@artist.slug}/#{@song.slug}?lines_per_blank=1" %></li>
-    <li><%= link_to "Hard", "/#{@artist.slug}/#{@song.slug}?lines_per_blank=2" %></li>
-    <li><%= link_to "Normal", "/#{@artist.slug}/#{@song.slug}?lines_per_blank=3" %></li>
-    <li><%= link_to "Easy", "/#{@artist.slug}/#{@song.slug}?lines_per_blank=4" %></li>
+    <li><%= link_to "Insane", "/#{@artist.slug}/#{@song.slug}?difficulty=insane" %></li>
+    <li><%= link_to "Hard", "/#{@artist.slug}/#{@song.slug}?difficulty=hard" %></li>
+    <li><%= link_to "Normal", "/#{@artist.slug}/#{@song.slug}?difficulty=normal" %></li>
+    <li><%= link_to "Easy", "/#{@artist.slug}/#{@song.slug}?difficulty=easy" %></li>
   </ul>
 </span>
 
