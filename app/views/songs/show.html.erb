@@ -6,7 +6,7 @@
       <h2><%= @song.name%></h2>
       <h3><%=@song.artist.first_name + " " + @song.artist.last_name%></h3>
     </div>
-    <div class="lyrics col-md-6 col-md-offset-3">
+    <div class="lyrics col-md-8 col-md-offset-2">
       <br>
       <% @blankified_lyrics.each do |lyric| %>
         <%= lyric %>
