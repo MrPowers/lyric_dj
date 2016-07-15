@@ -1,13 +1,5 @@
-# == Schema Information
-#
-# Table name: artists
-#
-#  id         :integer          not null, primary key
-#  first_name :string
-#  last_name  :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#
-
 class Artist < ActiveRecord::Base
+  validates :first_name, presence: true
+  validates :slug, presence: true, uniqueness: true
+  validates :first_name, uniqueness: { scope: :last_name }
 end

@@ -11,3 +11,4 @@ Song.where(
   artist_id: bieber.id,
   slug: "sorry"
 ).first_or_create
+
