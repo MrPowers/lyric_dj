@@ -34,7 +34,8 @@ class SongsController < ApplicationController
             counter = 1
             indices = words.each_index.select{|i| !words[i].start_with?("SKIP")}
             i = indices.sample
-            words[i] = "<input type=\"text\" data-correct-answer=\"#{words[i]}\" size=\"#{words[i].length + 1}\" style=\"text-align:center\"></input><span class=\"answer-correctness\"></span>"
+            answer = words[i].gsub(/[?.,\/#!$%\^&\*;:{}=\_`~()]/,"")
+            words[i] = "<input type=\"text\" data-correct-answer=\"#{answer}\" size=\"#{answer.length + 1}\" style=\"text-align:center\"></input><span class=\"answer-correctness\"></span>"
             result = words.join(" ")
           end
         end
