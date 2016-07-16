@@ -167,3 +167,49 @@ MusicTypeSong.where(
   song_id: ginza.id
 ).first_or_create
 
+
+
+# Shawn Mendes
+
+shawn_mendes = Artist.where(
+  first_name: "Shawn",
+  last_name: "Mendes",
+  slug: "shawn-mendes"
+).first_or_create
+
+stitches = Song.where(
+  name: "Stitches",
+  language: "english",
+  youtube_id: "VbfpW0pbvaU",
+  artist_id: shawn_mendes.id,
+  slug: "stitches"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_pop.id,
+  song_id: stitches.id
+).first_or_create
+
+
+
+# Lukas Graham
+
+lukas_graham = Artist.where(
+  first_name: "Lukas",
+  last_name: "Graham",
+  slug: "lukas-graham"
+).first_or_create
+
+seven_years = Song.where(
+  name: "7 Years",
+  language: "english",
+  youtube_id: "LHCob76kigA",
+  artist_id: lukas_graham.id,
+  slug: "7-years"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_pop.id,
+  song_id: seven_years.id
+).first_or_create
+

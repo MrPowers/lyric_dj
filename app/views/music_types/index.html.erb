@@ -2,11 +2,15 @@
 
   <% @music_types.each do |type| %>
     <h2><%= type.name %> - <%= type.language %></h2>
-    <% type.songs.each do |song| %>
-      <%= link_to(artist_song_path(artist_slug: song.artist.slug, song_slug: song.slug)) do %>
-        <%= image_tag("#{song.artist.slug}/#{song.slug}") %>
+    <div class="playlist">
+      <% type.songs.each do |song| %>
+        <div>
+          <%= link_to(artist_song_path(artist_slug: song.artist.slug, song_slug: song.slug)) do %>
+            <%= image_tag("#{song.artist.slug}/#{song.slug}") %>
+          <% end %>
+        </div>
       <% end %>
-    <% end %>
+    </div>
   <% end %>
 
 </div>
