@@ -1,7 +1,7 @@
 <div class="container" id="songs">
 
   <% @music_types.each do |type| %>
-    <h2><%= type.name %> - <%= type.language %></h2>
+    <h3 class="music-type"><%= type.language.titlecase %> <%= type.name %></h3>
     <div class="playlist">
       <% type.songs.each do |song| %>
         <div>

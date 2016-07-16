@@ -14,20 +14,5 @@
  *= require slick
  *= require slick-theme
  *= require_self
- */
- /*font-family: 'Passion One', cursive;
- font-family: 'Open Sans', sans-serif;*/
+*/
 
-h1, h2, h3, h4 {
-  font-family: 'Passion One', cursive !important;
-  font-weight: normal;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif !important;
-  padding-top: 60px;
-}
-
-html body {
-  background-color: black;
-}
