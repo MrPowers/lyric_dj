@@ -3,8 +3,8 @@
 <div class="container" id="song-body">
   <div class="row">
     <div class="artist-info">
-      <h2><%= @song.name%></h2>
-      <h3><%=@song.artist.first_name + " " + @song.artist.last_name%></h3>
+      <h2><%= @song.name %></h2>
+      <h3><%= @song.artist.full_name %></h3>
     </div>
     <div class="lyrics col-md-8 col-md-offset-2">
       <br>

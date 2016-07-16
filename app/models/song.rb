@@ -6,4 +6,7 @@ class Song < ActiveRecord::Base
   validates :youtube_id, presence: true
   validates :artist_id, presence: true
   validates :slug, presence: true
+
+  has_many :music_type_songs
+  has_many :music_types, :through => :music_type_songs
 end

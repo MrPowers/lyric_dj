@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Adding a static controller, per the devise instructions. We'll need one (or something similar) for the homepage, anyway.
-  root 'static#root'
+  root 'music_types#index'
 
   devise_for :users
 
