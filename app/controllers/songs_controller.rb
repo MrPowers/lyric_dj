@@ -3,6 +3,7 @@ class SongsController < ApplicationController
   def show
     @artist = Artist.where(slug: params[:artist_slug]).first
     @song = Song.where(slug: params[:song_slug], artist_id: @artist.id).first
+    @song_path = "https://s3.amazonaws.com/powers-songs/#{@artist.slug}/#{@song.slug}.mp3"
     lyrics_path = File.join(Rails.root, "song_data", @artist.slug, @song.slug + ".txt")
     lyrics = File.read(lyrics_path).split("\n")
     @difficulty = params[:difficulty] || "normal"
