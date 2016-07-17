@@ -1,6 +1,7 @@
 // Place all the styles related to the Songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .lyrics {
   font-size: 1.5em;
 }
@@ -34,5 +35,34 @@
 
 #song-body {
   padding-top: 60px;
+}
+
+#songs {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #F2FFE3;
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ACF0F2;
+  background: linear-gradient(90deg, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ACF0F2;
+  background-position: auto auto;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 50px auto;
+  background-size: 50px auto;
+}
+
+.correct {
+	color: green;
+	font-weight: bolder;
+}
+
+.incorrect {
+	color: red;
+	font-weight: bolder;
 }
 
