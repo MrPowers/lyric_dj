@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   get '/:artist_slug/:song_slug', to: 'songs#show', as: 'artist_song'
 
-  get 'aprender-ingles-con-canciones', to: 'blogs#about'
+  get 'aprender-ingles-con-canciones', to: 'static#aprender_ingles_con_canciones'
 
 end

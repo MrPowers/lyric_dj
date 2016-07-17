@@ -1,5 +1,4 @@
 class StaticController < ApplicationController
-  def root
-    # Homepage stuff.
+  def aprender_ingles_con_canciones
   end
 end
