@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "jquery-rails"
 gem "jquery-slick-rails"
+gem 'activeadmin'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
