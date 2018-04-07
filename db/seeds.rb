@@ -18,8 +18,14 @@ spanish_pop = MusicType.where(
 
 spanish_reggaeton = MusicType.where(
   language: "spanish",
-  name: "Pop"
+  name: "Reggaeton"
 ).first_or_create
+
+kondzilla = MusicType.where(
+  language: "portuguese",
+  name: "KondZilla"
+).first_or_create
+
 
 spanish_bachata = MusicType.where(
   language: "spanish",
@@ -50,6 +56,49 @@ english_reggae = MusicType.where(
   language: "english",
   name: "Reggae"
 ).first_or_create
+
+# MC Fioti
+
+mc_fioti = Artist.where(
+  first_name: "MC Fioti",
+  slug: "mc-fioti"
+).first_or_create
+
+bum_bum = Song.where(
+  name: "Bum Bum Tam Tam",
+  language: "portuguese",
+  youtube_id: "_P7S2lKif-A",
+  artist_id: mc_fioti.id,
+  slug: "bum-bum-tam-tam"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: kondzilla.id,
+  song_id: bum_bum.id
+).first_or_create
+
+
+# MC Kevinho
+
+mc_kevinho = Artist.where(
+  first_name: "MC Kevinho",
+  slug: "mc-kevinho"
+).first_or_create
+
+olha_a_explosao = Song.where(
+  name: "Olha a Explosao",
+  language: "portuguese",
+  youtube_id: "3yd_eoMOvqk",
+  artist_id: mc_kevinho.id,
+  slug: "olha-a-explosao"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: kondzilla.id,
+  song_id: olha_a_explosao.id
+).first_or_create
+
+
 
 # Justin Bieber
 
