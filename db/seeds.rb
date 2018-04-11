@@ -57,6 +57,29 @@ english_reggae = MusicType.where(
   name: "Reggae"
 ).first_or_create
 
+
+# Ozuna
+
+ozuna = Artist.where(
+  first_name: "Ozuna",
+  slug: "ozuna"
+).first_or_create
+
+balenciaga = Song.where(
+  name: "Balenciaga",
+  language: "spanish",
+  youtube_id: "pd7AMDMotyM",
+  artist_id: ozuna.id,
+  slug: "balenciaga"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: spanish_reggaeton.id,
+  song_id: balenciaga.id
+).first_or_create
+
+
+
 # MC Fioti
 
 mc_fioti = Artist.where(
