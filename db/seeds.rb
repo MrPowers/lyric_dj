@@ -58,6 +58,28 @@ english_reggae = MusicType.where(
 ).first_or_create
 
 
+# Lil Dicky
+
+lil_dicky = Artist.where(
+  first_name: "Lil Dicky",
+  slug: "lil-dicky"
+).first_or_create
+
+freaky_friday = Song.where(
+  name: "Freaky Friday",
+  language: "english",
+  youtube_id: "YJeTdLD9mjQ",
+  artist_id: lil_dicky.id,
+  slug: "freaky-friday"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_rap.id,
+  song_id: freaky_friday.id
+).first_or_create
+
+
+
 # Ozuna
 
 ozuna = Artist.where(
