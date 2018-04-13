@@ -58,6 +58,27 @@ english_reggae = MusicType.where(
 ).first_or_create
 
 
+# Six Nine
+
+six_nine = Artist.where(
+  first_name: "6IX9INE",
+  slug: "six-nine"
+).first_or_create
+
+billy = Song.where(
+  name: "Billy",
+  language: "english",
+  youtube_id: "LJjsm6CVsG8",
+  artist_id: six_nine.id,
+  slug: "billy"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_rap.id,
+  song_id: billy.id
+).first_or_create
+
+
 # Lil Dicky
 
 lil_dicky = Artist.where(
@@ -602,6 +623,29 @@ MusicTypeSong.where(
   music_type_id: spanish_champeta.id,
   song_id: la_invite_a_bailar.id
 ).first_or_create
+
+
+
+# C-Kan
+
+c_kan = Artist.where(
+  first_name: "C-Kan",
+  slug: "c-kan"
+).first_or_create
+
+un_par_de_balas = Song.where(
+  name: "Un Par De Balas",
+  language: "spanish",
+  youtube_id: "A6iJsZoRO64",
+  artist_id: c_kan.id,
+  slug: "un-par-de-balas"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: spanish_rap.id,
+  song_id: un_par_de_balas.id
+).first_or_create
+
 
 
 # Catel de santa
