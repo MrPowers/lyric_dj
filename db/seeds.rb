@@ -115,7 +115,7 @@ lil_dicky = Artist.where(
 freaky_friday = Song.where(
   name: "Freaky Friday",
   language: "english",
-  youtube_id: "YJeTdLD9mjQ",
+  youtube_id: "aZla1ttZHaw",
   artist_id: lil_dicky.id,
   slug: "freaky-friday"
 ).first_or_create
@@ -123,6 +123,19 @@ freaky_friday = Song.where(
 MusicTypeSong.where(
   music_type_id: english_rap.id,
   song_id: freaky_friday.id
+).first_or_create
+
+save_dat_money = Song.where(
+  name: "Save Dat Money",
+  language: "english",
+  youtube_id: "yvHYWD29ZNY",
+  artist_id: lil_dicky.id,
+  slug: "save-dat-money"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_rap.id,
+  song_id: save_dat_money.id
 ).first_or_create
 
 
