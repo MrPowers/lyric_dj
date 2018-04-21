@@ -11,11 +11,6 @@ english_pop = MusicType.where(
   name: "Pop"
 ).first_or_create
 
-spanish_pop = MusicType.where(
-  language: "spanish",
-  name: "Pop"
-).first_or_create
-
 spanish_reggaeton = MusicType.where(
   language: "spanish",
   name: "Reggaeton"
@@ -61,6 +56,12 @@ salsa = MusicType.where(
   language: "spanish",
   name: "Salsa"
 ).first_or_create
+
+spanish_pop = MusicType.where(
+  language: "spanish",
+  name: "Pop"
+).first_or_create
+
 
 # Joe Arroyo
 
