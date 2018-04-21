@@ -727,6 +727,20 @@ nicky_jam = Artist.where(
   slug: "nicky-jam"
 ).first_or_create
 
+el_amante = Song.where(
+  name: "El Amante",
+  language: "spanish",
+  youtube_id: "YG2p6XBuSKA",
+  artist_id: nicky_jam.id,
+  slug: "el-amante"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: spanish_reggaeton.id,
+  song_id: el_amante.id
+).first_or_create
+
+
 hasta_el_amanecer = Song.where(
   name: "Hasta El Amanecer",
   language: "spanish",
