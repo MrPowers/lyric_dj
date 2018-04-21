@@ -57,6 +57,31 @@ english_reggae = MusicType.where(
   name: "Reggae"
 ).first_or_create
 
+salsa = MusicType.where(
+  language: "spanish",
+  name: "Salsa"
+).first_or_create
+
+# Joe Arroyo
+
+joe_arroyo = Artist.where(
+  first_name: "Joe Arroyo",
+  slug: "joe-arroyo"
+).first_or_create
+
+no_le = Song.where(
+  name: "Ne le pegue a la negra",
+  language: "spanish",
+  youtube_id: "PqmLPeL8aj4",
+  artist_id: joe_arroyo.id,
+  slug: "no-le-pegue-a-la-negra"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: salsa.id,
+  song_id: no_le.id
+).first_or_create
+
 
 # Six Nine
 
