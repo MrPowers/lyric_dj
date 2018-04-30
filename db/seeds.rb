@@ -1,8 +1,8 @@
 # Wipe the existing models
-ActiveRecord::Base.connection.execute("truncate table music_types")
-ActiveRecord::Base.connection.execute("truncate table artists")
-ActiveRecord::Base.connection.execute("truncate table songs")
-ActiveRecord::Base.connection.execute("truncate table music_type_songs")
+#ActiveRecord::Base.connection.execute("truncate table music_types")
+#ActiveRecord::Base.connection.execute("truncate table artists")
+#ActiveRecord::Base.connection.execute("truncate table songs")
+#ActiveRecord::Base.connection.execute("truncate table music_type_songs")
 
 # Music Types
 
@@ -66,6 +66,33 @@ soul = MusicType.where(
   language: "english",
   name: "Soul"
 ).first_or_create
+
+r_b = MusicType.where(
+  language: "english",
+  name: "R&B"
+).first_or_create
+
+
+# Khalid
+
+khalid = Artist.where(
+  first_name: "Khalid",
+  slug: "khalid"
+).first_or_create
+
+location = Song.where(
+  name: "Location",
+  language: "English",
+  youtube_id: "by3yRdlQvzs",
+  artist_id: khalid.id,
+  slug: "location"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: r_b.id,
+  song_id: location.id
+).first_or_create
+
 
 # Ben King
 
