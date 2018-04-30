@@ -264,6 +264,19 @@ MusicTypeSong.where(
   song_id: what_do_you_mean.id
 ).first_or_create
 
+love_yourself = Song.where(
+  name: "Love Yourself",
+  language: "english",
+  youtube_id: "oyEuk8j8imI",
+  artist_id: bieber.id,
+  slug: "love-yourself"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_pop.id,
+  song_id: love_yourself.id
+).first_or_create
+
 
 # Adele
 
