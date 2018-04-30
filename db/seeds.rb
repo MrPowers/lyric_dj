@@ -72,6 +72,33 @@ r_b = MusicType.where(
   name: "R&B"
 ).first_or_create
 
+indie_rock = MusicType.where(
+  language: "english",
+  name: "Indie Rock"
+).first_or_create
+
+
+# Old Man Canyon
+
+old_man_canyon = Artist.where(
+  first_name: "Old Man Canyon",
+  slug: "old-man-canyon"
+).first_or_create
+
+phantoms_and_friends = Song.where(
+  name: "Phantoms & Friends",
+  language: "English",
+  youtube_id: "hzIGIBQXVqA",
+  artist_id: old_man_canyon.id,
+  slug: "phantoms-and-friends"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: indie_rock.id,
+  song_id: phantoms_and_friends.id
+).first_or_create
+
+
 
 # Khalid
 
