@@ -62,6 +62,31 @@ spanish_pop = MusicType.where(
   name: "Pop"
 ).first_or_create
 
+soul = MusicType.where(
+  language: "english",
+  name: "Soul"
+).first_or_create
+
+# Ben King
+
+ben_king = Artist.where(
+  first_name: "Ben King",
+  slug: "ben-king"
+).first_or_create
+
+stand_by_me = Song.where(
+  name: "Stand By Me",
+  language: "English",
+  youtube_id: "hwZNL7QVJjE",
+  artist_id: ben_king.id,
+  slug: "stand-by-me"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: soul.id,
+  song_id: stand_by_me.id
+).first_or_create
+
 
 # Joe Arroyo
 
