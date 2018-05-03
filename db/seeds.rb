@@ -82,6 +82,11 @@ folk = MusicType.where(
   name: "Folk"
 ).first_or_create
 
+electronic = MusicType.where(
+  language: "english",
+  name: "Electronic"
+).first_or_create
+
 
 
 # Old Man Canyon
@@ -1206,6 +1211,26 @@ MusicTypeSong.where(
   song_id: wild_world.id
 ).first_or_create
 
+
+# Kygo
+
+kygo = Artist.where(
+  first_name: "Kygo",
+  slug: "kygo"
+).first_or_create
+
+stranger_things = Song.where(
+  name: "Stranger Things",
+  language: "english",
+  youtube_id: "3ChgRbqGi-E",
+  artist_id: kygo.id,
+  slug: "stranger-things"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: electronic.id,
+  song_id: stranger_things.id
+).first_or_create
 
 
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
