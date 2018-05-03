@@ -282,6 +282,27 @@ MusicTypeSong.where(
   song_id: olha_a_explosao.id
 ).first_or_create
 
+# Pink
+
+pink = Artist.where(
+  first_name: "Pink",
+  slug: "pink"
+).first_or_create
+
+just_give_me_a_reason = Song.where(
+  name: "Just Give Me a Reason",
+  language: "english",
+  youtube_id: "OpQFFLBMEPI",
+  artist_id: pink.id,
+  slug: "just-give-me-a-reason"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: english_pop.id,
+  song_id: just_give_me_a_reason.id
+).first_or_create
+
+
 
 
 # Justin Bieber
