@@ -77,6 +77,12 @@ indie_rock = MusicType.where(
   name: "Indie Rock"
 ).first_or_create
 
+folk = MusicType.where(
+  language: "english",
+  name: "Folk"
+).first_or_create
+
+
 
 # Old Man Canyon
 
@@ -1178,6 +1184,28 @@ MusicTypeSong.where(
   music_type_id: spanish_bachata.id,
   song_id: darte_un_beso.id
 ).first_or_create
+
+
+# Cat Stevens
+
+cat_stevens = Artist.where(
+  first_name: "Cat Stevens",
+  slug: "cat-stevens"
+).first_or_create
+
+wild_world = Song.where(
+  name: "Wild World",
+  language: "english",
+  youtube_id: "y8pvXLVu8Yk",
+  artist_id: cat_stevens.id,
+  slug: "wild-world"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: folk.id,
+  song_id: wild_world.id
+).first_or_create
+
 
 
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
