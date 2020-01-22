@@ -21,6 +21,10 @@ kondzilla = MusicType.where(
   name: "KondZilla"
 ).first_or_create
 
+portuguese_pop = MusicType.where(
+  language: "portuguese",
+  name: "Portuguese Pop"
+).first_or_create
 
 spanish_bachata = MusicType.where(
   language: "spanish",
@@ -85,6 +89,49 @@ folk = MusicType.where(
 electronic = MusicType.where(
   language: "english",
   name: "Electronic"
+).first_or_create
+
+
+# Diogo Picarra
+
+diogo_picarra = Artist.where(
+  first_name: "Diogo Piçarra",
+  slug: "diogo-picarra"
+).first_or_create
+
+tu_e_eu = Song.where(
+  name: "Tu e Eu",
+  language: "Portuguese",
+  youtube_id: "eq2gY2TVALY",
+  artist_id: diogo_picarra.id,
+  slug: "tu-e-eu"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: portuguese_pop.id,
+  song_id: tu_e_eu.id
+).first_or_create
+
+
+
+# Gaab
+
+gaab = Artist.where(
+  first_name: "Gaab",
+  slug: "gaab"
+).first_or_create
+
+vai_passar = Song.where(
+  name: "Vai Passar",
+  language: "Portuguese",
+  youtube_id: "eq2gY2TVALY",
+  artist_id: gaab.id,
+  slug: "vai-passar"
+).first_or_create
+
+MusicTypeSong.where(
+  music_type_id: portuguese_pop.id,
+  song_id: vai_passar.id
 ).first_or_create
 
 
